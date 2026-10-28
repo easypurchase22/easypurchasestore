@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Easy Purchase Store — browse fashion, electronics, home and kitchen picks.">
+<title>Easy Purchase Store</title>
+<style>
+:root{--ink:#18212f;--muted:#657084;--brand:#176b55;--accent:#f3b33d;--paper:#f7f8f5;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--paper);color:var(--ink)}
+header{background:#fff;border-bottom:1px solid #e7e9e5;position:sticky;top:0;z-index:5}
+.wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.logo{font-weight:850;font-size:1.15rem;letter-spacing:-.03em}.logo span{color:var(--brand)}
+nav{display:flex;gap:14px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:650}
+.hero{padding:52px 0 36px;background:linear-gradient(120deg,#e4f1e8,#f8f0d9)}
+.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05;max-width:700px;margin:0 0 16px;letter-spacing:-.045em}
+.hero p{max-width:610px;color:#445266;font-size:1.05rem;line-height:1.65}
+.pill{display:inline-block;background:#fff;border-radius:99px;padding:7px 12px;font-size:.8rem;font-weight:750;color:var(--brand);margin-bottom:14px}
+.btn{display:inline-block;background:var(--brand);color:white;padding:12px 17px;border-radius:12px;text-decoration:none;font-weight:750;border:0;cursor:pointer}
+section{padding:32px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:18px}.sectionhead h2{margin:0;font-size:1.65rem;letter-spacing:-.03em}.sectionhead p{margin:5px 0 0;color:var(--muted)}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.category{padding:20px;border-radius:18px;background:white;border:1px solid #e8eae6;text-decoration:none;color:var(--ink);font-weight:800;min-height:110px}.category span{display:block;font-size:1.7rem;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:var(--card);border:1px solid #e6e8e4;border-radius:18px;padding:18px;display:flex;flex-direction:column;min-height:225px}.emoji{font-size:2.2rem;background:#f0f4ef;border-radius:14px;display:grid;place-items:center;height:78px;margin-bottom:14px}.product h3{margin:0 0 7px;font-size:1.08rem}.product p{margin:0 0 15px;color:var(--muted);font-size:.92rem;line-height:1.5;flex:1}.product .btn{align-self:start;font-size:.9rem;padding:10px 13px}
+.notice{background:#fff8e7;border:1px solid #f1dfad;padding:15px 17px;border-radius:14px;color:#654d18;line-height:1.5}
+footer{background:#18212f;color:#e9eee9;padding:28px 0;margin-top:25px}footer p{color:#c7d0d0;line-height:1.6;font-size:.9rem}
+@media(max-width:720px){.categories{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.hero{padding:38px 0 28px}.sectionhead{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><div class="logo">Easy <span>Purchase</span> Store</div><nav><a href="#categories">Categories</a><a href="#picks">Featured picks</a><a href="#about">About</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="pill">SMART FINDS • EVERYDAY VALUE</div><h1>Good finds for your everyday life.</h1><p>Explore hand-picked ideas for fashion, electronics, home and kitchen. Browse the categories and discover products that suit your needs.</p><a class="btn" href="#categories">Explore categories ↓</a></div></section>
+<section id="categories"><div class="wrap"><div class="sectionhead"><div><h2>Shop by category</h2><p>Start with what you need.</p></div></div><div class="categories">
+<a class="category" href="#fashion"><span>👕</span>Fashion</a><a class="category" href="#electronics"><span>🎧</span>Electronics</a><a class="category" href="#home"><span>🛋️</span>Home</a><a class="category" href="#kitchen"><span>🍳</span>Kitchen</a>
+</div></div></section>
+<section id="picks"><div class="wrap"><div class="sectionhead"><div><h2>Featured ideas</h2><p>Example cards — add your real affiliate links before publishing.</p></div></div><div class="grid">
+<article class="product" id="fashion"><div class="emoji">👟</div><h3>Everyday fashion finds</h3><p>Clothing, shoes and accessories for your daily style.</p><a class="btn" href="#about">View category</a></article>
+<article class="product" id="electronics"><div class="emoji">🎧</div><h3>Useful electronics</h3><p>Explore headphones, phone accessories and everyday tech.</p><a class="btn" href="#about">View category</a></article>
+<article class="product" id="home"><div class="emoji">🪴</div><h3>Home essentials</h3><p>Simple ideas to make your space comfortable and organised.</p><a class="btn" href="#about">View category</a></article>
+<article class="product" id="kitchen"><div class="emoji">☕</div><h3>Kitchen favourites</h3><p>Helpful tools and essentials for cooking and serving.</p><a class="btn" href="#about">View category</a></article>
+<article class="product"><div class="emoji">🎁</div><h3>Gift ideas</h3><p>Browse ideas for birthdays, celebrations and everyday surprises.</p><a class="btn" href="#about">View category</a></article>
+<article class="product"><div class="emoji">✨</div><h3>New discoveries</h3><p>Keep this space for new products you recommend.</p><a class="btn" href="#about">View category</a></article>
+</div></div></section>
+<section id="about"><div class="wrap"><div class="sectionhead"><div><h2>About Easy Purchase Store</h2><p>A simple place to discover product ideas.</p></div></div><div class="notice"><strong>Affiliate disclosure:</strong> Some links on this site may be affiliate links, which means the store owner may earn a commission from qualifying purchases at no extra cost to you. Affiliate links are not connected yet. Replace example buttons with your own approved Amazon Associates or eBay Partner Network links before promoting this site.</div></div></section>
+</main>
+<footer><div class="wrap"><div class="logo">Easy <span>Purchase</span> Store</div><p>Fashion • Electronics • Home • Kitchen</p><p>Product details and availability may change. Please check the retailer’s page before purchasing.</p></div></footer>
+</body></html>
