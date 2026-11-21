@@ -95,4 +95,107 @@ html, body{height:100%;}
 	color:red;
 	margin-left:16px;
 }
+/* Easy Purchase Store */
 
+:root {
+
+  --primary-color: #2563eb;
+
+  --secondary-color: #1e293b;
+
+  --background-color: #f8fafc;
+
+  --text-color: #1f2937;
+
+  --white: #ffffff;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  background: var(--background-color);
+
+  color: var(--text-color);
+
+}
+
+.main {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  background: var(--background-color);
+
+}
+
+button {
+
+  cursor: pointer;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+  background: var(--primary-color);
+
+  color: var(--white);
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+}
+
+button:hover {
+
+  background: #1d4ed8;
+
+}
+
+img {
+
+  max-width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  color: var(--primary-color);
+
+}
+
+@media (max-width: 768px) {
+
+  .main {
+
+    width: 100%;
+
+  }
+
+  button {
+
+    width: auto;
+ }
+
+}
